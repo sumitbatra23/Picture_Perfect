@@ -1,0 +1,115 @@
+@media screen and (max-width: 700px){
+	
+	.font1{
+		font-size: 200%;
+	}
+
+	.searchbar{
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0.5%;
+	}
+
+	.btn{
+		width: 75%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0.8%;
+	}
+
+	#nav li{
+		display: block;
+		float: none;
+		text-align: center;
+	}
+
+	#nav .ext{
+		float: none;
+		margin-top: 0.7%;
+	}
+
+	.dropdown-content{
+		width: 85%;
+	}
+
+
+	.font2{
+		font-size: 250%;
+	}
+
+	#img-container{
+		float: none;
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 2%;
+	}
+
+	#img-container:hover{
+		width: 60%;
+	}
+
+	.font3{
+		font-size: 150%;
+		clear: both;
+		text-align: center;
+	}
+
+	.font2{
+		clear: both;
+	}
+
+	.next{
+		float: none;
+		text-align: center;
+	}
+
+	#symbol{
+		float: none;
+		padding: 10px;
+		display: block;
+		text-align: center;
+		font-size: 1000%;
+	}
+
+	.poster{
+		float: none;
+		display: block;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.navbar-fixed{
+		position: static;
+
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 1070px){
+	#nav li{
+		padding: 5px 10px;
+	}
+	#nav li a{
+		font-size: 16px;
+	}
+	.dropdown-content{
+		top: 32px;
+	}
+	.font2{
+		font-size: 300%;
+	}
+	.font3{
+		font-size: 150%;	
+	}
+	.poster{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		width: 40%;
+		display: block;
+	}
+
+}

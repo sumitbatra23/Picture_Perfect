@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Picture Perfect | Home</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/angular.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Permanent+Marker|Roboto|Anton" rel="stylesheet">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.js"></script>
+</head>
+
+
+<body ng-app="myApp" ng-controller="myCtrl">
+	<div class="header">
+			<a href="index.htm"><img src="images/logo.png" style="float:left;width: 150px;"></a>
+			<h1 class="font1">Your ultimate destination for Movies!</h1>
+			<input type="text" class="searchbar" placeholder="Search Info and Trailers for movies here..."  ng-model="search">
+			<button type="button" class="btn" ng-click="searching()">
+				<i class="fa fa-search" style="font-size: 15px;padding-right: 10px;"></i>Search
+			</button>
+	
+
+		<div id="nav"><ul>
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="index.htm#two">Latest Movies</a></li>
+				<li class="dropdown dropbtn"><a href="index.htm#three">Categories <i class="fa fa-caret-square-o-down"></i></a>
+						<div class="dropdown-content">
+    						<a href="#">Action</a>
+    						<a href="#">Drama</a>
+  					  		<a href="#">Sci-fi</a>
+  					  		<a href="#">Comedy</a>
+  					  		<a href="#">Horror</a>
+  					  		<a href="#">Suspense</a>
+  					  		<a href="index.htm#three">More...</a>
+  						</div>
+				</li>
+				<li><a href="index.htm#four">About</a></li>				
+				<li><a href="index.htm#five">Follow Us</a></li>
+				<li class="ext"><a href="#">Sign in</a></li>
+				<li class="ext"><a href="#">Register</a></li>
+			</ul>
+		</div>
+	
+	</div>
+	
+	<div class="section one" ng-show='x'>
+		<div class="close" ng-click="cls()">X</div>
+		<img src="{{poster}}" class="poster">
+		<div class="col">
+			<h2> {{ name }} </h2><br>
+			<ul class="info">
+				<li><b>Info:</b> {{ bio }}</li>
+				<li><b>Genre:</b> {{ genre }}</li>
+				<li><b>Date Released/To be released:</b> {{ date }}</li>
+				<li><b>Director:</b> {{ director}}</li>
+				<li><b>Box Office Collection:</b> {{ boxoffice }}</li>
+				<li><b>Website:</b> <a href="{{website}}" style="text-decoration: underline;">{{website}}</a></li>
+			</ul>
+		</div>
+	</div>
+	
+
+	<div class="section" id="two">
+		<h1 class="font2">Latest Movies</h1>
+		<div id="img-container">
+			<a href="" style="text-decoration: none;">
+			<img src="images/li.png" style="width: 100%;">
+			<div class="text">
+				Lorem Ipsum
+			</div>
+			</a>
+		</div>
+		<div id="img-container">
+			<a href="#" style="text-decoration: none;">
+			<img src="images/li.png" style="width: 100%;">
+			<div class="text">
+				Lorem Ipsum
+			</div>
+			</a>
+		</div>
+		<div id="img-container">
+			<a href="#" style="text-decoration: none;">
+			<img src="images/li.png" style="width: 100%;" >
+			<div class="text">
+				Lorem Ipsum
+			</div>
+			</a>
+		</div>
+		<div id="img-container">
+			<a href="#" style="text-decoration: none;">
+			<img src="images/li.png" style="width: 100%;" >
+			<div class="text">
+				Lorem Ipsum
+			</div>
+			</a>
+		</div>
+		<div class="next">
+			<a href="#"> >>>	</a>
+		</div>
+	</div>
+	
+
+	<div class="section" id="three">
+		<h1 class="font2"> Categories</h1>
+		<div class="columns">
+			<a href="#">Action</a><br>
+			<a href="">Romance</a><br>
+			<a href="">Comedy</a><br>
+			<a href="">Drama</a><br>
+			<a href="">Thriller/Suspense</a><br>
+			<a href="">Animation</a><br>
+			<a href="">Sci-fi</a><br>
+			<a href="">Horror</a><br>
+		</div>
+	</div>
+
+
+	<div class="section" id="four">
+		<i class="fa fa-snowflake-o" id="symbol"></i>
+		<h1 class="font2">Who are we?</h1>
+		<h2 class="font3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum pulvinar enim non hendrerit. Praesent elementum aliquam elit. Nam luctus elementum cursus. Vivamus porta efficitur lacinia. Morbi sollicitudin mattis nunc, eget luctus quam. Suspendisse egestas est metus, sit amet malesuada arcu pulvinar in.</h2>
+	</div>	
+
+	
+
+	<div class="section" id="five">
+		<h1 class="font4">Follow us on:</h1>
+		<a href="http://www.fb.com"><i class="fa fa-facebook" id="icons1" ></i></a>
+		<a href="http://www.twitter.com"><i class="fa fa-twitter" id="icons2" ></i></a>
+		<a href="http://www.youtube.com"><i class="fa fa-youtube-play" id="icons3" ></i></a>
+	</div>
+
+	<div class="footer">
+		Copyright &copy; Sumit Batra. All rights Reserved.
+	</div>
+	<script type="text/javascript" src="js/script.js">
+		
+	</script>
+</body>
+</html>
